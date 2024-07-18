@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href=" logo.png ">
+
+    <title>Spotify - web player : music for everyone</title>
+    <link rel="stylesheet" href="Project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Poppins&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54fdb630a4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#main">Home</a>
+                </div>
+
+
+                <div class="nav-option1">
+                    <div class="nav_option2" onclick="search()" ondblclick="search_()">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>Search
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="library_icon.png"><a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+                </div>
+                <div class="li-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first play list</p>
+                        <p class="box-p2">It's easy, we'll help you </p>
+                        <a href="create playList.html">Create playlist</a>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to foll</p>
+                        <p class="box-p2">we'll keep you updated on new episodes </p>
+                        <button class="badge">Browes podcasts</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="nav-icon">
+                    <img src="backward_icon.png">
+                    <img src="forward_icon.png " class="hide">
+                    <input type="text" placeholder="Search" autofocus=" " class="input_box" />
+                    <button class="search_btn">Click</button>
+                </div>
+
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Preminum</button>
+                    <button class="badge nav-item dark-badge" id="ins" onclick="show()"><i class="fa-solid fa-download"
+                            style="margin-right:5px;">
+                        </i> Install App</button>
+                    <div class="ch">
+                    
+                            <i class="fa-solid fa-user nav-item"> </i>
+                    
+
+                    </div>
+                </div>
+            </div>
+
+            <h2> Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+
+                </div>
+
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+            </div>
+            <h2>Feature Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card5img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs- Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img">
+                    <p class="card-title">Top songs - India </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global </p>
+                    <p class="card-info"> Your daily updates of the</br> most played tracks . . . .</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line">
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <i class="fa-solid fa-waveform-lines"></i>
+              <img src="card4img.jpeg" />
+              <div class="album_text">Keep calm and the devil<br/>Leo new poster...</div>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="player_icon1.png" class="player-control-icon">
+                    <img src="player_icon2.png" class="player-control-icon">
+
+                    <img src="player_icon3.png" class="player-control-icon play" style="opacity: 1; height: 2rem;">
+                    <img src="player_icon4.png" class="player-control-icon">
+                    <img src="player_icon5.png" class="player-control-icon">
+                
+                </div>
+           
+               
+
+            </div>
+            <div class="controls">
+                <div class="vlm">
+                        <img src="valume.jpeg" class="volume">
+                
+                </div>
+                <img src="screenfull.jpg">
+
+                <div class="set">
+                    <input type="checkbox" id="setting" />
+                    <label for="setting">
+                        <img src="settings.png"></label>
+                    <div class="pa">
+                        <p class="p1" onclick="show1()">480px</p>
+                        <p class="p2" onclick="show2()">360px</p>
+                        <p class="p3" onclick="show3()"> 240px</p>
+                        <p class="p4" onclick="show4()">180px</p>
+                    </div>
+                </div>
+
+                <div id="heart">
+                    <img src="likeicon.png" onclick="ht()"  class="imglike"/>
+
+                </div>
+                <img src="dislike.png" onclick="unlike()" />
+                <span class="heart2"></span>
+
+            </div>
+
+           
+        </div>
+    </div>
+    <script src="Project.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+        });
+    </script>
+</body>
+
+</html>
